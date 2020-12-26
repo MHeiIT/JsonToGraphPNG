@@ -18,8 +18,8 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.image.WritableImage;
 import javafx.stage.Stage;
-import javafx.embed.swing.SwingFXUtils;
 
+import javafx.embed.swing.SwingFXUtils;
 /**
  * Hello world!
  *
