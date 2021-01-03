@@ -53,7 +53,7 @@ public class App extends Application {
         
         DateUser[] du = getUsers(path1);
         
-        for (int i = 0; i < du[0].getUsers().length-1;i++) {
+        for (int i = 0; i < du[0].getUsers().length;i++) {
         	XYChart.Series series = new XYChart.Series();
         	series.setName(du[0].getUsers()[i].getName());
         	for (int a = du.length; a > 0;a--) {
@@ -67,6 +67,8 @@ public class App extends Application {
         Scene scene = new Scene(lineChart, 800, 600);
         saveAsPng(scene, path2);
         System.out.println("Saved");
+        stage.close();
+        stop();
     }
     
     public void saveAsPng(Scene scene, String path) {
